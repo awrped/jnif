@@ -62,12 +62,12 @@ set(JNIF_SRC
         src-libjnif/printer.cpp
         src-libjnif/writer.cpp
         src-libjnif/stream.cpp
-        src-libjnif/jar.cpp
         src-libjnif/model.cpp
         src-libjnif/analysis.cpp)
 
 if(JNIF_ZIP_SUPPORT)
     set(JNIF_SRC ${JNIF_SRC}
+            src-libjnif/jar.cpp
             src-libjnif/zip/ioapi.c
             src-libjnif/zip/ioapi.h
             src-libjnif/zip/unzip.c
